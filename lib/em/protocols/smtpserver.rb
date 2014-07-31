@@ -377,7 +377,7 @@ module EventMachine
           send_data "503 Operation sequence error\r\n"
         else
           succeeded = proc {
-            send_data "354 Send it\r\n"
+            send_data "354 Bring it on!\r\n"
             @state << :data
             @databuffer = []
           }
